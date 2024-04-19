@@ -15,8 +15,8 @@ class SpecialistSeeder extends Seeder
     public function run(): void
     {
         Specialist::factory()
-            ->has(Review::factory()->count(1_000))
-            ->count(1_000)
+            ->has(Review::factory()->count(1000))
+            ->count(1000)
             ->create();
     }
 }
